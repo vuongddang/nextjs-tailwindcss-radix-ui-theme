@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Container, Flex, Heading, Text } from '@radix-ui/themes'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -7,9 +8,9 @@ export default function Home() {
       <Container size="2">
         <Flex direction="column">
           <Heading color="indigo">NextJs - TailwindCss -  Radix UI Theme</Heading>
-          <Text color="gray">
-            This is a simple NextJs app with TailwindCss and Radix UI Theme.
-          </Text>
+          <Link href='/about' color="gray">
+            About me
+          </Link>
         </Flex>
       </Container>
     </main>
